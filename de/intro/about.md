@@ -2,7 +2,7 @@
 
 _Zentral Unterschriften sammeln, Daten getrennt aufbewahren_
 
-[![voces.ch Mockup](./mockup.png)](./mockup.png)
+[![voces.ch Mockup](/mockup.png)](/mockup.png)
 
 **voces.ch** ist eine moderne, massgeschneiderte Plattform für digitale Kampagnen, Petitionen und offene Briefe. Sie wurde entwickelt, um Aktivist\*innen, NGOs und Basisbewegungen ein Werkzeug in die Hand zu geben, mit dem sie schnell und effektiv Mobilisierung betreiben können – direkt auf ihren eigenen Websites.
 
