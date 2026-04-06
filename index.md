@@ -2,13 +2,16 @@
 layout: empty
 ---
 
-<script>
-  // Redirects immediately to your German start page.
-  // Using a relative path ensures it works perfectly with your /voces-docs/ base URL!
-  window.location.replace('./de');
+<script setup>
+import { onMounted } from 'vue'
+
+// onMounted ensures this ONLY runs in the browser, never during the Node.js build!
+onMounted(() => {
+  window.location.replace('./de/intro/about.html')
+})
 </script>
 
 <div style="padding: 2rem; text-align: center; font-family: sans-serif;">
   <p>Weiterleitung zur Dokumentation...</p>
-  <a href="./de">Falls du nicht automatisch weitergeleitet wirst, klicke hier.</a>
+  <a href="./de/intro/about.html">Falls du nicht automatisch weitergeleitet wirst, klicke hier.</a>
 </div>
