@@ -23,12 +23,12 @@ features:
   - icon: 🤝
     title: Gemeinsames Ziel, getrennte Daten
     details: Lade Partnerorganisationen ein. Ihr teilt euch den Fortschrittsbalken, aber jede*r behält nur die eigenen E-Mail-Adressen.
-  - icon: 🌍
-    title: Nativ Mehrsprachig
-    details: Erreiche Menschen in ihrer Muttersprache. Biete deine Kampagnen mehrsprachig an, das Widget passt sich an.
   - icon: 🛠️
     title: Eigene Formularfelder
     details: Frage genau die Daten ab, die du brauchst. Von der Postleitzahl bis zum Newsletter-Opt-In.
+  - icon: 🌍
+    title: Nativ Mehrsprachig
+    details: Erreiche Menschen in ihrer Muttersprache. Biete deine Kampagnen mehrsprachig an, das Widget passt sich an.
   - icon: 🔌
     title: Nahtlose Integrationen
     details: Sende gesammelte Unterschriften in Echtzeit an Mailchimp oder per Webhook an Zapier, Make und N8N.
