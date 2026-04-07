@@ -1,24 +1,38 @@
 ---
-# https://vitepress.dev/reference/default-theme-home-page
 layout: home
 
 hero:
-  name: "voces.ch"
-  text: "Handbuch für Benutzer*innen"
-  tagline: Unterschriften sammeln mit kompletter Datenhoheit
+  name: voces.ch
+  text: Digitale Kampagnen. Gemeinsam stark.
+  tagline: Das Kampagnen-Tool für NGOs und Aktivist*innen. Petitionen und offene Briefe überall einbetten – mit getrennten Daten für Partnerorganisationen.
+  image:
+    src: /mockup-index.png
+    alt: voces.ch Widget Mockup
   actions:
     - theme: brand
-      text: Was ist voces.ch?
+      text: Loslegen & Doku lesen
       link: /de/intro/about
     - theme: alt
-      text: Loslegen 🚀
-      link: /de/intro/getting-started
+      text: Live Demo testen
+      link: /de/intro/demo
 
-# features:
-#   - title: Feature A
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature B
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
-#   - title: Feature C
-#     details: Lorem ipsum dolor sit amet, consectetur adipiscing elit
+features:
+  - icon: ⚡️
+    title: Überall einbettbar
+    details: Binde dein Kampagnen-Formular mit einem simplen HTML-Schnipsel in jede beliebige Website ein.
+  - icon: 🤝
+    title: Gemeinsames Ziel, getrennte Daten
+    details: Lade Partnerorganisationen ein. Ihr teilt euch den Fortschrittsbalken, aber jede*r behält nur die eigenen E-Mail-Adressen.
+  - icon: 🌍
+    title: Nativ Mehrsprachig
+    details: Erreiche Menschen in ihrer Muttersprache. Biete deine Kampagnen mehrsprachig an, das Widget passt sich an.
+  - icon: 🛠️
+    title: Eigene Formularfelder
+    details: Frage genau die Daten ab, die du brauchst. Von der Postleitzahl bis zum Newsletter-Opt-In.
+  - icon: 🔌
+    title: Nahtlose Integrationen
+    details: Sende gesammelte Unterschriften in Echtzeit an Mailchimp oder per Webhook an Zapier, Make und N8N.
+  - icon: 🔒
+    title: Schweizer Datenschutz
+    details: Open-Source, transparent und entwickelt für maximale Datensouveränität. Hauptinstanz läuft auf Schweizer-Server.
 ---
