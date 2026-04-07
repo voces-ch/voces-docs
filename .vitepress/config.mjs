@@ -39,6 +39,23 @@ export default defineConfig({
             ],
           },
           {
+            text: "Integrationen",
+            items: [
+              {
+                text: "Was sind Integrationen?",
+                link: "/de/integrations/about",
+              },
+              {
+                text: "Webhook Integration",
+                link: "/de/integrations/webhook",
+              },
+              {
+                text: "Mailchimp Integration",
+                link: "/de/integrations/mailchimp",
+              },
+            ],
+          },
+          {
             text: "Demo",
             items: [{ text: "Demo Umgebung", link: "/de/demo/how-to-use" }],
           },
