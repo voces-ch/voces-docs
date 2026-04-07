@@ -38,11 +38,16 @@ export default defineConfig({
               { text: "Daten exportieren", link: "/de/supporters/export" },
             ],
           },
+          {
+            text: "Demo",
+            items: [{ text: "Demo Umgebung", link: "/de/demo/how-to-use" }],
+          },
         ],
         nav: [
           { text: "Los gehts!", link: "/de/intro/getting-started" },
           { text: "Kampagnen", link: "/de/campaigns/create" },
           { text: "Unterstützer*innen", link: "/de/supporters/export" },
+          { text: "Demo", link: "/de/demo/how-to-use" },
         ],
         socialLinks: [
           { icon: "github", link: "https://github.com/voces-ch/voces.ch" },

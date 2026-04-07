@@ -54,3 +54,11 @@ Wenn die Partnerorganisation das Widget nicht selbst einbettet, sondern z.B. in 
 `https://deine-website.ch/unsere-petition?source=DEIN-TRACKING-SLUG`
 
 Unser Widget ist so programmiert, dass es diesen Parameter (`?source=...`) automatisch aus der Adresszeile des Browsers ausliest. Wenn jemand über diesen speziellen Link auf die Seite kommt und unterschreibt, wird die Unterschrift automatisch der Partnerorganisation gutgeschrieben.
+
+::: tip 💡 Gut zu wissen: Mehrfach-Unterschriften & Partner-Organisationen
+**Was passiert, wenn eine Person die Kampagne zweimal unterschreibt – zum Beispiel einmal direkt bei dir und einmal über das Widget einer Partnerorganisation?**
+
+In diesem Fall wird der Datensatz **beiden** Organisationen in ihrer jeweiligen Unterstützer\*innen-Tabelle gutgeschrieben (da jede Organisation diesen Kontakt rechtmässig über ihr eigenes Widget generiert hat).
+
+Der globale **Gesamtzähler** der Kampagne (und der Fortschrittsbalken) ist jedoch intelligent: Er nutzt das _eindeutige Erkennungsmerkmal_ (z.B. die E-Mail-Adresse), um Duplikate herauszufiltern. In der Gesamtsumme der Kampagne wird diese Person also nur **ein einziges Mal** gezählt. So erhalten alle Partner\*innen ihre verdienten Daten, ohne dass das öffentliche Gesamtergebnis künstlich aufgebläht wird!
+:::

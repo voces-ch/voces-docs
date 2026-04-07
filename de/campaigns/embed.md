@@ -14,11 +14,11 @@ Im voces.ch Backend machen wir es dir besonders einfach. Anstatt den Code von Ha
 2.  Scrolle zum Bereich **Einbetten** (Widget Konfigurator).
 3.  Passe das Widget an deine Bedürfnisse an:
     - **Theme:** Wähle das Design, das am besten zu deiner Website passt (z.B. _minimal_, _impact_, _neon_).
-      - [Beispiel Theme «Minimal»](/theme-minimal.png)
-      - [Beispiel Theme «Card»](/theme-card.png)
-      - [Beispiel Theme «Registry»](/theme-registry.png)
-      - [Beispiel Theme «Neon»](/theme-neon.png)
-      - [Beispiel Theme «Impact»](/theme-impact.png)
+      - [Beispiel Theme «Minimal»](https://demo.voces.ch/demo/widget/view?theme=minimal#form)
+      - [Beispiel Theme «Card»](https://demo.voces.ch/demo/widget/view?theme=card#form)
+      - [Beispiel Theme «Registry»](https://demo.voces.ch/demo/widget/view?theme=registry#form)
+      - [Beispiel Theme «Neon»](https://demo.voces.ch/demo/widget/view?theme=neon#form)
+      - [Beispiel Theme «Impact»](https://demo.voces.ch/demo/widget/view?theme=impact#form)
       - Alternativ kannst du auch «unstyled» wählen, um dein eigenes CSS für das Widget zu gestalten.
     - **Sprache:** Wähle die Standardsprache aus, in der das Formular geladen werden soll.
     - **Fortschrittsbalken:** Entscheide, ob der dynamische Zähler angezeigt werden soll.

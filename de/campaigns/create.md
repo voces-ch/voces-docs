@@ -61,9 +61,15 @@ Damit niemand die Petition zweimal unterschreibt, muss das System wissen, wie es
 Dafür gelten drei strikte Regeln:
 
 1.  Du **musst genau ein Feld** als Erkennungsmerkmal markieren (nicht null, nicht zwei).
-
 2.  Dieses Feld muss zwingend ein **Pflichtfeld** sein.
-
 3.  Dieses Feld muss vom Typ **Text** oder **E-Mail** sein (in der Regel wählt man hierfür die E-Mail-Adresse).
+
+::: tip 💡 Gut zu wissen: Mehrfach-Unterschriften & Partner-Organisationen
+**Was passiert, wenn eine Person die Kampagne zweimal unterschreibt – zum Beispiel einmal direkt bei dir und einmal über das Widget einer Partnerorganisation?**
+
+In diesem Fall wird der Datensatz **beiden** Organisationen in ihrer jeweiligen Unterstützer\*innen-Tabelle gutgeschrieben (da jede Organisation diesen Kontakt rechtmässig über ihr eigenes Widget generiert hat).
+
+Der globale **Gesamtzähler** der Kampagne (und der Fortschrittsbalken) ist jedoch intelligent: Er nutzt das _eindeutige Erkennungsmerkmal_ (z.B. die E-Mail-Adresse), um Duplikate herauszufiltern. In der Gesamtsumme der Kampagne wird diese Person also nur **ein einziges Mal** gezählt. So erhalten alle Partner\*innen ihre verdienten Daten, ohne dass das öffentliche Gesamtergebnis künstlich aufgebläht wird!
+:::
 
 Wenn du alle Felder ausgefüllt hast, klicke unten auf **Erstellen**. Deine Kampagne ist nun gespeichert und bereit, auf deiner Website eingebettet zu werden!
