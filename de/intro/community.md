@@ -13,4 +13,4 @@ Um dir den bestmöglichen Support zu bieten und die Weiterentwicklung von voces.
 - 🐛 **Fehler melden (Bugs):** Etwas funktioniert nicht wie erwartet? Lass es uns wissen, damit wir es schnell beheben können.
 - 💬 **Fragen & Support:** Tausche dich mit anderen Nutzer\*innen aus und hol dir Hilfe bei der Einrichtung deiner Kampagne.
 
-> 🌍 **Hinweis zur Sprache:** Da unser Entwicklungs-Team und die Community international wachsen, bitten wir dich, deine Beiträge im Forum **nach Möglichkeit auf Englisch** zu verfassen. So können alle mitlesen und wir können dir viel schneller weiterhelfen!
+> 🌍 **Hinweis zur Sprache:** Da die Schweiz mehrsprachig ist, aber wir nicht alle unsere 4 Landessprachen verstehen, bitten wir dich, deine Beiträge im Forum **nach Möglichkeit auf Englisch** zu verfassen. So können alle mitlesen und wir können dir viel schneller weiterhelfen!
