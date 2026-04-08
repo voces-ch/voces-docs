@@ -31,6 +31,7 @@ export default defineConfig({
                 link: "/de/campaigns/campaign-partners",
               },
               { text: "Kampagne übersetzen", link: "/de/campaigns/translate" },
+              { text: "Kampagnen-Seiten", link: "/de/campaigns/hosted-pages" },
             ],
           },
           {
