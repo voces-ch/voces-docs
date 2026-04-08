@@ -14,7 +14,7 @@ hero:
       link: /de/intro/about
     - theme: alt
       text: Live Demo testen
-      link: /de/intro/demo
+      link: /de/demo/how-to-use
 
 features:
   - icon: ⚡️
