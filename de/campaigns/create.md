@@ -22,10 +22,6 @@ Hier definierst du die grundlegenden Eckdaten deiner Kampagne.
 
 - **Titel:** Der öffentliche Name deiner Kampagne (z.B. _Rettet den Silbersee_).
 
-- **Slug:** Ein webfreundlicher Kurzname für die URL (z.B. _rettet-den-silbersee_). Verwende hier nur Kleinbuchstaben und Bindestriche, keine Abstände.
-
-- **Beschreibung (Description):** Hier kannst du den Hintergrund deiner Kampagne erklären. _Hinweis: Dieser Text ist intern oder für zukünftige, eigenständige Kampagnenseiten gedacht. Wenn du das Widget auf deiner eigenen Website einbettest, hast du den Text vermutlich ohnehin schon dort stehen._
-
 - **Button-Text (Submit Label):** Was soll auf dem Absende-Button stehen? Standardmässig steht hier "Jetzt unterschreiben", aber du kannst es beliebig anpassen (z.B. "Brief absenden").
 
 - **Unterschriften-Ziel (Signature Goal):** Wie viele Unterschriften möchtest du sammeln? Wenn du hier eine Zahl einträgst (z.B. `1000`), kannst du deinem Widget automatisch einen motivierenden Fortschrittsbalken hinzufügen. Lässt du das Feld leer, wird der Balken ausgeblendet.
