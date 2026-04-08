@@ -18,6 +18,7 @@ export default defineConfig({
               { text: "Was ist voces.ch?", link: "/de/intro/about" },
               { text: "Los gehts!", link: "/de/intro/getting-started" },
               { text: "Selber hosten", link: "/de/intro/self-hosting" },
+              { text: "Community-Forum", link: "/de/intro/community" },
             ],
           },
           {
