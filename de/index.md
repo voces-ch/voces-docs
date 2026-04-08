@@ -32,7 +32,7 @@ features:
   - icon: 🔌
     title: Nahtlose Integrationen
     details: Sende gesammelte Unterschriften in Echtzeit an Mailchimp oder per Webhook an Zapier, Make und N8N.
-  - icon: 🔒
-    title: Schweizer Datenschutz
-    details: Open-Source, transparent und entwickelt für maximale Datensouveränität. Hauptinstanz läuft auf Schweizer-Server.
+  - icon: 🌐
+    title: Simple Kampagnenseiten
+    details: Hat deine Organisation oder Kampagne noch keine eigene Webseite? Kein Problem! Auf act.voces.ch hosten wir deine Kampagne!
 ---
