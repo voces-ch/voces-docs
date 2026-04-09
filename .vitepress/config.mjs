@@ -30,6 +30,10 @@ export default defineConfig({
                 text: "Mit Partner*innen arbeiten",
                 link: "/de/campaigns/campaign-partners",
               },
+              {
+                text: "Benutzerdefinierte Felder",
+                link: "/de/campaigns/custom-fields",
+              },
               { text: "Kampagne übersetzen", link: "/de/campaigns/translate" },
               { text: "Kampagnen-Seiten", link: "/de/campaigns/hosted-pages" },
             ],

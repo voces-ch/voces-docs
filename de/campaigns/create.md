@@ -34,38 +34,10 @@ Was soll passieren, _nachdem_ jemand auf "Jetzt unterschreiben" geklickt hat? Du
 
 - **Weiterleitung (Redirect to a URL):** Nutze diese Option, wenn du die Person nach der Unterschrift auf eine spezielle "Danke"-Seite auf deiner eigenen Homepage, oder zu einer Spendenseite weiterleiten möchtest. Vergiss nicht, die vollständige URL (inkl. `https://`) anzugeben!
 
-## 3. Eigene Formularfelder (Custom Campaign Fields)
+## Benutzerdefinierte Kampagnenfelder
 
-Dies ist das Herzstück deiner Kampagne. Hier bestimmst du, welche Daten du von deinen Unterstützer\*innen abfragen möchtest (z.B. Vorname, E-Mail, Postleitzahl).
+Jede Kampagne muss Daten erfassen, aber nicht jede Kampagne benötigt dieselben Daten. Standardmässig beginnt deine Kampagne mit Standardfeldern, aber du hast die volle Kontrolle darüber, welche Informationen du von deinen Unterzeichnern erfasst.
 
-Du kannst Felder über den Button **"Add Custom Field"** hinzufügen und ihre Reihenfolge jederzeit per Drag & Drop verändern.
+Da die Verwaltung von Datenhoheit und der Sichtbarkeit für Partner so wichtig ist, haben wir der Einrichtung und Weiterleitung deiner Felder einen eigenen Leitfaden gewidmet.
 
-Für jedes Feld musst du Folgendes definieren:
-
-- **Interne Bezeichnung (Internal Key):** Das ist der Name für die Datenbank-Spalte und den späteren Export (z.B. `first_name` oder `plz`). Er darf **keine Leerzeichen** enthalten!
-
-- **Typ:** Ist es ein kurzes Textfeld, eine Checkbox (z.B. für Newsletter-Opt-ins) oder ein Datumsfeld?
-
-- **Öffentliche Beschriftung (Public Label):** Das ist der Text, den die Nutzer\*innen über dem Eingabefeld sehen (z.B. _Vorname_ oder _Ich möchte den Newsletter abonnieren_).
-
-- **Pflichtfeld (Is Required):** Muss das Feld zwingend ausgefüllt werden?
-
-### ⚠️ Wichtig: Das Eindeutige Erkennungsmerkmal (Unique Identifier)
-
-Damit niemand die Petition zweimal unterschreibt, muss das System wissen, wie es Personen unterscheiden kann. Dafür gibt es den Schalter **"Use as Unique Identifier"**.
-
-Dafür gelten drei strikte Regeln:
-
-1.  Du **musst genau ein Feld** als Erkennungsmerkmal markieren (nicht null, nicht zwei).
-2.  Dieses Feld muss zwingend ein **Pflichtfeld** sein.
-3.  Dieses Feld muss vom Typ **Text** oder **E-Mail** sein (in der Regel wählt man hierfür die E-Mail-Adresse).
-
-::: tip 💡 Gut zu wissen: Mehrfach-Unterschriften & Partner-Organisationen
-**Was passiert, wenn eine Person die Kampagne zweimal unterschreibt – zum Beispiel einmal direkt bei dir und einmal über das Widget einer Partnerorganisation?**
-
-In diesem Fall wird der Datensatz **beiden** Organisationen in ihrer jeweiligen Unterstützer\*innen-Tabelle gutgeschrieben (da jede Organisation diesen Kontakt rechtmässig über ihr eigenes Widget generiert hat).
-
-Der globale **Gesamtzähler** der Kampagne (und der Fortschrittsbalken) ist jedoch intelligent: Er nutzt das _eindeutige Erkennungsmerkmal_ (z.B. die E-Mail-Adresse), um Duplikate herauszufiltern. In der Gesamtsumme der Kampagne wird diese Person also nur **ein einziges Mal** gezählt. So erhalten alle Partner\*innen ihre verdienten Daten, ohne dass das öffentliche Gesamtergebnis künstlich aufgebläht wird!
-:::
-
-Wenn du alle Felder ausgefüllt hast, klicke unten auf **Erstellen**. Deine Kampagne ist nun gespeichert und bereit, auf deiner Website eingebettet zu werden!
+👉 **[Lies den vollständigen Leitfaden zu benutzerdefinierten Kampagnenfeldern](./custom-fields.md)**
