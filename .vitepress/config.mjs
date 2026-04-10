@@ -34,6 +34,10 @@ export default defineConfig({
                 text: "Benutzerdefinierte Felder",
                 link: "/de/campaigns/custom-fields",
               },
+              {
+                text: "E-Mail Verifizierung",
+                link: "/de/campaigns/email-verification",
+              },
               { text: "Kampagne übersetzen", link: "/de/campaigns/translate" },
               { text: "Kampagnen-Seiten", link: "/de/campaigns/hosted-pages" },
             ],
