@@ -69,6 +69,19 @@ export default defineConfig({
             text: "Demo",
             items: [{ text: "Demo Umgebung", link: "/de/demo/how-to-use" }],
           },
+          {
+            text: "Rechtliches",
+            items: [
+              {
+                text: "Nutzungsbedingungen",
+                link: "/de/legal/tos",
+              },
+              {
+                text: "Datenschutzerklärung",
+                link: "/de/legal/privacy",
+              },
+            ],
+          },
         ],
         nav: [
           { text: "Los gehts!", link: "/de/intro/getting-started" },
