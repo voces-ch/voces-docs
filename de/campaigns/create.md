@@ -26,16 +26,16 @@ Hier definierst du die grundlegenden Eckdaten deiner Kampagne.
 ## Daten-Pooling (Erweiterte Funktion)
 
 ::: danger 🛑 ACHTUNG: Nur für erfahrene Anwender\*innen
-Diese Funktion greift tief in die Datenarchitektur und die rechtliche Verantwortung deiner Kampagne ein. Aktiviere das Daten-Pooling **nur**, wenn du genau weisst, was du tust, und die datenschutzrechtlichen Konsequenzen (DSG/DSGVO) mit all deinen Partnern im Voraus geklärt hast.
+Diese Funktion greift tief in die Datenarchitektur und die rechtliche Verantwortung deiner Kampagne ein. Aktiviere das Daten-Pooling **nur**, wenn du genau weisst, was du tust, und die datenschutzrechtlichen Konsequenzen (DSG/DSGVO) mit all deinen Partner\*innen im Voraus geklärt hast.
 :::
 
-Standardmässig arbeitet Voces mit streng getrennten Datensilos: Du (der Host) siehst nur die Daten, die über dein Hauptformular gesammelt wurden. Ein Partner sieht ausschliesslich die Daten, die über seinen spezifischen Partner-Link gesammelt wurden.
+Standardmässig arbeitet Voces mit streng getrennten Datensilos: Du (der Host) siehst nur die Daten, die über dein Hauptformular gesammelt wurden. Ein\*e Partner\*in sieht ausschliesslich die Daten, die über ihren spezifischen Partner\*innen-Link gesammelt wurden.
 
-Mit dem **Daten-Pooling** brichst du diese Silos in eine Richtung auf: Als Host erhältst du Lesezugriff auf **alle** gesammelten Unterschriften – auch auf jene, die von deinen Partnern generiert wurden. Die Partner selbst sehen weiterhin nur ihre eigenen Daten.
+Mit dem **Daten-Pooling** brichst du diese Silos in eine Richtung auf: Als Host erhältst du Lesezugriff auf **alle** gesammelten Unterschriften – auch auf jene, die von deinen Partner\*innen generiert wurden. Die Partner\*innen selbst sehen weiterhin nur ihre eigenen Daten.
 
 ### Zwingende rechtliche Verantwortung
 
-Wenn du diese Funktion aktivierst, liegt es in deiner absoluten Verantwortung sicherzustellen, dass die Unterzeichner\*innen auf den Formularen deiner Partner darüber informiert werden, dass ihre Daten auch an dich (den Host) übermittelt werden. Die entsprechenden Datenschutzerklärungen und Opt-in-Texte müssen zwingend angepasst werden!
+Wenn du diese Funktion aktivierst, liegt es in deiner absoluten Verantwortung sicherzustellen, dass die Unterzeichner\*innen auf den Formularen deiner Partner\*innen darüber informiert werden, dass ihre Daten auch an dich (den Host) übermittelt werden. Die entsprechenden Datenschutzerklärungen und Opt-in-Texte müssen zwingend angepasst werden!
 
 ### So aktivierst du das Pooling
 

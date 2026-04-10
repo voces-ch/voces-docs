@@ -22,6 +22,7 @@ voces.ch bietet dir alles, was du für eine erfolgreiche digitale Kampagne brauc
 - **Nahtlose Einbettung:** Integriere Petitionen mit einem einfachen Script-Tag direkt in deine bestehende Website.
 - **Gemeinsame Kampagnen, getrennte Daten:** Schliesse dich mit Partnerorganisationen für ein gemeinsames Ziel zusammen. Alle sammeln Unterschriften für denselben Fortschrittsbalken, aber jede Organisation behält die exklusive Kontrolle und Hoheit über die Daten _ihrer eigenen_ Unterstützer\*innen.
 - **Anpassbares Design:** Wähle aus verschiedenen Widget-Themes (z.B. _Minimal_, _Card_, _Impact_ oder _Neon_), die sich perfekt in dein Branding einfügen.
+- **Kampagnenseiten:** Für kleinere Kampagnen können aus dem Admin Panel schnell simple Kampagnenseiten erstellt werden.
 - **Echtzeit-Dynamik:** Motivierende Fortschrittsbalken und Live-Zähler, die sich sofort aktualisieren, wenn jemand unterschreibt.
 - **Mehrsprachigkeit:** Biete deine Formulare in verschiedenen Sprachen an, um eine breitere Zielgruppe zu erreichen.
 - **Einfaches Management:** Ein übersichtliches Backend zur Verwaltung deiner Kampagnen, Daten und Partnerorganisationen.
@@ -31,5 +32,3 @@ voces.ch bietet dir alles, was du für eine erfolgreiche digitale Kampagne brauc
 Wir entwickeln voces.ch ständig weiter. Folgende drei grosse Funktionen stehen aktuell auf unserer Roadmap:
 
 1. **E-Mail-Verifizierung (Double Opt-in):** Ein System, das sicherstellt, dass jede Unterschrift durch eine Bestätigungs-E-Mail verifiziert wird, um die Qualität und Integrität der Daten weiter zu erhöhen.
-2. **Eigenständige Kampagnenseiten:** Für kleinere Initiativen, die keine eigene Website haben, wird voces.ch bald automatisch einfache, eigenständige Landingpages generieren.
-3. **Mehrsprachiges Backend-Panel:** Die Übersetzung des gesamten Verwaltungsbereichs, damit mehrsprachige Teams das Tool in ihrer bevorzugten Sprache nutzen können.
