@@ -26,7 +26,7 @@ Voces muss wissen, an welche E-Mail-Adresse der Bestätigungslink gesendet werde
 
 ## Aktion nach der Verifizierung definieren
 
-Du kannst genau steuern, was passiert, nachdem ein*e Unterstützer*in erfolgreich auf den Verifizierungslink in der E-Mail geklickt hat. Unter **Post-Verification Action** hast du zwei Möglichkeiten:
+Du kannst genau steuern, was passiert, nachdem ein\*e Unterstützer\*in erfolgreich auf den Verifizierungslink in der E-Mail geklickt hat. Unter **Post-Verification Action** hast du zwei Möglichkeiten:
 
 ### Option 1: Erfolgsnachricht anzeigen (Show a Success Message)
 
