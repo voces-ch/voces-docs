@@ -31,6 +31,10 @@ export default defineConfig({
                 link: "/de/campaigns/campaign-partners",
               },
               {
+                text: "Kampagnenziel und Fortschritt",
+                link: "/de/campaigns/progress-bar",
+              },
+              {
                 text: "Benutzerdefinierte Felder",
                 link: "/de/campaigns/custom-fields",
               },
