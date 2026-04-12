@@ -1,89 +1,110 @@
+---
+outline: deep
+---
+
 # Selber hosten
 
 voces.ch ist zu 100 % Open Source! Wir glauben, dass Infrastruktur für digitalen Aktivismus frei zugänglich sein sollte. Wenn du die Plattform für deine eigenen Projekte auf deinen eigenen Servern betreiben möchtest, kannst du das jederzeit tun.
 
-Wir nutzen [Lando](https://lando.dev/) als lokales Entwicklungsumfeld, da es die gesamte Infrastruktur (Webserver, Datenbank, PHP, Node) in wenigen Minuten über Docker bereitstellt. Für das Backend benutzen wir [laravel](https://laravel.com/) & [filament](http://filamentphp.com/), das Widget nutzt [vue.js](https://vuejs.org/).
+## Selber hosten mit docker compose
 
-## Voraussetzungen
+voces.ch betreibt ein offizielles Repository, mit welchem du ganz einfach deine Instanz über `docker compose up -d` starten kannst.
 
-Bevor du loslegst, stelle sicher, dass folgende Tools auf deinem System installiert sind:
+> 👉 Hier gehts zum Repo: [github.ch/voces-ch/voces-docker](https://github.ch/voces-ch/voces-docker)
 
-- **Git**
-- **Docker** (z.B. Docker Desktop)
-- **Lando**
+## 🚀 Schnellstartanleitung
 
-## 1. Repository klonen
+### 1. Voraussetzungen
 
-Klone als Erstes das offizielle voces.ch Repository von GitHub auf deinen lokalen Rechner und wechsle in das Verzeichnis:
+Bevor du beginnst, stelle sicher, dass auf deinem Server oder lokalen Rechner Folgendes installiert ist:
 
-```bash
-bash git clone https://github.com/voces-ch/voces.ch.git
-cd voces.ch
-```
+- [Docker](https://docs.docker.com/get-docker/)
+- [Docker Compose](https://docs.docker.com/compose/install/)
 
-## 2. Umgebungsvariablen (.env) konfigurieren
+### 2. Repository klonen
 
-Laravel und unser Widget benötigen einige Umgebungsvariablen, um korrekt zu funktionieren. Kopiere die mitgelieferte Beispiel-Datei:
-
-`cp .env.example .env `
-
-Öffne nun die `.env`-Datei in deinem Editor. Für die lokale Lando-Umgebung musst du insbesondere die folgenden Werte überprüfen oder anpassen:
-
-```env
-# 1. App Konfiguration
-APP_NAME="voces.ch Local"
-APP_ENV=local
-APP_DEBUG=true
-APP_URL=http://voces.lndo.site # Die Standard-URL für Lando
-
-# 2. Datenbank (Lando Standardwerte)
-DB_CONNECTION=mysql
-DB_HOST=database
-DB_PORT=3306
-DB_DATABASE=laravel
-DB_USERNAME=laravel
-DB_PASSWORD=laravel
-
-# 3. Widget & Vite Konfiguration (Für das Frontend)
-
-VITE_API_URL="${APP_URL}/api/v1"
-WIDGET_VERSION=v1
-```
-
-## 3. Lando starten & Abhängigkeiten installieren
-
-Jetzt lassen wir Lando die Magie erledigen. Starte die Container und installiere alle Backend-Abhängigkeiten (dies kann beim ersten Mal ein paar Minuten dauern):
+Klone das obige Repository auf deinen Server und wechsle in das Verzeichnis:
 
 ```bash
-lando start
+git clone [https://github.com/voces-ch/voces-docker.git](https://github.com/voces-ch/voces-docker.git)
+cd voces-docker
 ```
+
+### 3. Konfiguriere deine Umgebung
+
+voces.ch verwendet eine `.env`-Datei, um deine Konfiguration (wie Datenbankpasswörter und API-Schlüssel) sicher zu speichern.
+
+Kopiere die bereitgestellte Beispieldatei, um deine eigene zu erstellen:
 
 ```bash
-lando composer install
+cp .env.example .env
 ```
 
-Sobald das abgeschlossen ist, generieren wir den Application Key für Laravel:
+Öffne die `.env`-Datei in deinem bevorzugte Texteditor (z. B. `nano .env` oder `vim .env`) und aktualisiere die erforderlichen Variablen:
+
+- **`APP_URL`**: Ändere dies in die Domain, unter der du die App hosten wirst (z. B. `https://app.deinedomain.ch`).
+- **`DB_PASSWORD`**: Ändere `secret_database_password` in ein starkes, sicheres Passwort.
+- **`TRUSTED_PROXIES`**: Wenn du einen Reverse-Proxy (wie CloudPanel, Nginx Proxy Manager oder Caddy) für die HTTPS-Verarbeitung verwendest, lasse dies auf `*` stehen.
+
+### 4. Generiere deinen Anwendungsschlüssel
+
+Laravel benötigt einen eindeutigen kryptografischen Schlüssel, um Benutzer\*sitzungen und verschlüsselte Daten zu sichern. Falls auf deinem Host-Rechner kein PHP installiert ist, verwende diesen Docker-Befehl, um einen Schlüssel sicher zu generieren:
 
 ```bash
-lando php artisan key:generate
+docker compose run --rm app php artisan key:generate --show
 ```
 
-## 4. Datenbank aufsetzen
+_Warte einen Moment, bis der temporäre Container hochgefahren ist. Es wird eine Zeichenfolge ausgegeben, die etwa so aussieht: `base64:XyZ...`_
 
-Erstelle die Tabellen in deiner Datenbank. Wenn du möchtest, kannst du auch direkt Testdaten (Seeder) laden:
+**Kopiere diese Zeichenfolge, öffnen deine `.env`-Datei erneut und füge sie neben `APP_KEY=` ein.**
+
+### 5. Starten die Anwendung!
+
+Nachdem du deine `.env`-Datei konfiguriert hast, kannst du loslegen:
 
 ```bash
-lando php artisan migrate --seed
+docker compose up -d
 ```
 
-## 5. Frontend kompilieren
+Docker lädt das neueste voces.ch-Image herunter, starte deine Datenbank und den Cache und führt die Datenbankmigrationen automatisch im Hintergrund aus.
 
-Zu guter Letzt müssen wir die Assets für das Backend (Filament) und unser einbettbares Widget (Vue/Vite) bauen:
+Deine Anwendung ist nun unter Port **8080** live!
+
+_(Hinweis: Wenn du einen Reverse-Proxy verwendest, leite den Datenverkehr deiner Domain einfach an `http://127.0.0.1:8080` weiter.)_
+
+## 🔄 Aktualisierung auf eine neue Version
+
+Wenn eine neue Version von voces.ch veröffentlicht wird, dauert die Aktualisierung deine Instanz meistens weniger als 30 Sekunden und erfordert kaum Ausfallzeit.
+
+Führe einfach diese beiden Befehle in deinem `voces-docker`-Verzeichnis aus:
 
 ```bash
-lando npm install && npm run build
+# Laden Sie das neueste vorgefertigte Image herunter
+docker compose pull
+
+# Starten Sie die Container mit dem neuen Code neu (führt Datenbankmigrationen automatisch durch)
+docker compose up -d
 ```
 
-_(Für die aktive Entwicklung am Widget kannst du stattdessen `lando npm run dev` nutzen, um Hot-Reloading zu aktivieren)._
+## 🛠 Fehlerbehebung & hilfreiche Befehle
 
-🎉 **Das war's!** Deine lokale Instanz von voces.ch sollte nun unter `http://voces.lndo.site` erreichbar sein.
+**Wie kann ich die Anwendungsprotokolle einsehen?**
+Wenn etwas schiefgeht, kannst du die Live-Ausgabe der Laravel-Anwendung einsehen, indem du folgenden Befehl ausführst:
+
+```bash
+docker compose logs -f app
+```
+
+**Ich habe etwas in meiner `.env`-Datei geändert, aber es wird nicht aktualisiert!**
+Wenn du deine `.env`-Datei aktualisierst, musst du Docker anweisen, den Container neu zu erstellen, damit er die neuen Variablen übernehmen kann:
+
+```bash
+docker compose up -d
+```
+
+**Wie greife ich auf den Container zu, um Artisan-Befehle manuell auszuführen?**
+Falls du jemals einen Befehl manuell innerhalb des Anwendungscontainers ausführen musst:
+
+```bash
+docker compose exec app php artisan route:list
+```
