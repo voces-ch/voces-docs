@@ -36,3 +36,13 @@ features:
     title: Simple Kampagnenseiten
     details: Hat deine Organisation oder Kampagne noch keine eigene Webseite? Kein Problem! Auf act.voces.ch hosten wir deine Kampagne!
 ---
+
+<script setup>
+import InteractiveWidget from '../components/InteractiveWidget.vue'
+</script>
+
+## Probier es aus:
+
+Passen das untenstehende Widget an und schau zu, wie einfach es sich in jede Website integrieren lässt.
+
+<InteractiveWidget lang="de" />

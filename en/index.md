@@ -36,3 +36,13 @@ features:
     title: Simple Hosted Campaign Pages
     details: No campaign website yet? No problem. We can host your campaign page on act.voces.ch.
 ---
+
+<script setup>
+import InteractiveWidget from '../components/InteractiveWidget.vue'
+</script>
+
+## Try it live
+
+Customize the widget below and see how easily it integrates into any website.
+
+<InteractiveWidget />

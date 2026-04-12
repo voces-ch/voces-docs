@@ -2,6 +2,8 @@
 
 _Centralized signature collection with separated data ownership_
 
+[![Build and Publish Docker Image](https://github.com/voces-ch/voces.ch/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/voces-ch/voces.ch/actions/workflows/docker-publish.yml)
+
 [![voces.ch mockup](/mockup.png)](/mockup.png)
 
 **voces.ch** is a modern, tailor-made platform for digital campaigns, petitions, and open letters. It was built to give activists, NGOs, and grassroots movements a tool for fast and effective mobilization directly on their own websites.

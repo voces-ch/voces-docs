@@ -2,6 +2,8 @@
 
 _Collecte centralisee des signatures avec propriete des donnees separee_
 
+[![Build and Publish Docker Image](https://github.com/voces-ch/voces.ch/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/voces-ch/voces.ch/actions/workflows/docker-publish.yml)
+
 [![Maquette voces.ch](/mockup.png)](/mockup.png)
 
 **voces.ch** est une plateforme moderne et sur mesure pour les campagnes digitales, les petitions et les lettres ouvertes. Elle a ete concue pour donner aux activistes, ONG et mouvements citoyens un outil de mobilisation rapide et efficace, directement sur leurs propres sites.

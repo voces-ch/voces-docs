@@ -36,3 +36,13 @@ features:
     title: Pages de campagne hébergées
     details: Pas encore de site pour votre campagne ? Aucun probleme. Nous pouvons l'héberger sur act.voces.ch.
 ---
+
+<script setup>
+import InteractiveWidget from '../components/InteractiveWidget.vue'
+</script>
+
+## Essayez-le en direct
+
+Personnalisez le widget ci-dessous et découvrez à quel point il s'intègre facilement à n'importe quel site web.
+
+<InteractiveWidget lang="fr"/>

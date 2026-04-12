@@ -2,6 +2,8 @@
 
 _Zentral Unterschriften sammeln, Daten getrennt aufbewahren_
 
+[![Build and Publish Docker Image](https://github.com/voces-ch/voces.ch/actions/workflows/docker-publish.yml/badge.svg)](https://github.com/voces-ch/voces.ch/actions/workflows/docker-publish.yml)
+
 [![voces.ch Mockup](/mockup.png)](/mockup.png)
 
 **voces.ch** ist eine moderne, massgeschneiderte Plattform für digitale Kampagnen, Petitionen und offene Briefe. Sie wurde entwickelt, um Aktivist\*innen, NGOs und Basisbewegungen ein Werkzeug in die Hand zu geben, mit dem sie schnell und effektiv Mobilisierung betreiben können – direkt auf ihren eigenen Websites.
@@ -29,4 +31,5 @@ voces.ch bietet dir alles, was du für eine erfolgreiche digitale Kampagne brauc
 - **Einfaches Management:** Ein übersichtliches Backend zur Verwaltung deiner Kampagnen, Daten und Partnerorganisationen.
 
 ## 🚀 Roadmap (Was noch kommt)
+
 Hast du ein Feature, das dir auf voces.ch fehlt? [Ergänze es auf unserer Community!](https://community.voces.ch/)

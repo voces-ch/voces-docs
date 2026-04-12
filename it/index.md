@@ -36,3 +36,13 @@ features:
     title: Pagine campagna ospitate
     details: Non hai ancora un sito? Nessun problema. Possiamo ospitare la tua campagna su act.voces.ch.
 ---
+
+<script setup>
+import InteractiveWidget from '../components/InteractiveWidget.vue'
+</script>
+
+## Provalo dal vivo
+
+Personalizza il widget qui sotto e scopri con quanta facilità si integra in qualsiasi sito web.
+
+<InteractiveWidget lang="it"/>
