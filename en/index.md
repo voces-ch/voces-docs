@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: voces.ch
-  text: Digital campaigns. Stronger together.
+  text: Digital campaigns.<br>Stronger together.
   tagline: The campaign tool for NGOs and activists. Embed petitions and open letters anywhere, with separated supporter data for partner organizations.
   image:
     src: /mockup-index.png

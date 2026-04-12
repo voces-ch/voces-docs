@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: voces.ch
-  text: Digitale Kampagnen. Gemeinsam stark.
+  text: Digitale Kampagnen.<br>Gemeinsam stark.
   tagline: Das Kampagnen-Tool für NGOs und Aktivist*innen. Petitionen und offene Briefe überall einbetten – mit getrennten Daten für Partnerorganisationen.
   image:
     src: /mockup-index.png

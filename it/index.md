@@ -3,7 +3,7 @@ layout: home
 
 hero:
   name: voces.ch
-  text: Campagne digitali. Piu forti insieme.
+  text: Campagne digitali.<br>Piu forti insieme.
   tagline: Lo strumento di campagna per ONG e attivisti. Integra petizioni e lettere aperte ovunque, con dati separati per le organizzazioni partner.
   image:
     src: /mockup-index.png
