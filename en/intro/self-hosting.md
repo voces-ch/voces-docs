@@ -10,7 +10,7 @@ voces.ch is 100% open source! We believe that infrastructure for digital activis
 
 voces.ch maintains an official repository that lets you easily start your instance using `docker compose up -d`.
 
-> 👉 Click here for the repo: [github.ch/voces-ch/voces-docker](https://github.ch/voces-ch/voces-docker)
+> 👉 Click here for the repo: [github.com/voces-ch/voces-docker](https://github.com/voces-ch/voces-docker)
 
 ## 🚀 Quick Start Guide
 
