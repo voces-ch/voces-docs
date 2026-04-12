@@ -4,6 +4,8 @@ import { defineConfig } from "vitepress";
 export default defineConfig({
   base: "/",
   title: "voces.ch docs",
+  // TODO: Enable darkmode when its implemented with the widgets
+  appearance: false
   description: "Documentation for the voces.ch platform",
   themeConfig: {
     editLink: {
