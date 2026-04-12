@@ -10,7 +10,7 @@ voces.ch ist zu 100 % Open Source! Wir glauben, dass Infrastruktur für digitale
 
 voces.ch betreibt ein offizielles Repository, mit welchem du ganz einfach deine Instanz über `docker compose up -d` starten kannst.
 
-> 👉 Hier gehts zum Repo: [github.ch/voces-ch/voces-docker](https://github.ch/voces-ch/voces-docker)
+> 👉 Hier gehts zum Repo: [github.com/voces-ch/voces-docker](https://github.com/voces-ch/voces-docker)
 
 ## 🚀 Schnellstartanleitung
 
