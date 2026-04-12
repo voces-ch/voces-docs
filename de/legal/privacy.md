@@ -5,6 +5,7 @@ Der Schutz deiner Daten ist uns ein wichtiges Anliegen. Diese Datenschutzerklär
 ## 1. Welche Daten wir erfassen
 
 **Für Unterstützer\*innen (Signees):** Wenn du eine Kampagne unterzeichnest, erfassen wir die im Formular angegebenen Daten (in der Regel Vorname, Nachname, E-Mail-Adresse) sowie Metadaten (namentlich Zeitstempel) und den Status deiner E-Mail-Verifizierung (Double Opt-In).
+
 **Für Hosts und Partner:** Kontakt- und Zugangsdaten zur Verwaltung des Accounts.
 
 ## 2. Zweck der Datenverarbeitung
