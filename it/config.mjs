@@ -13,6 +13,10 @@ export default defineAdditionalConfig({
         items: [
           { text: "Cos'e voces.ch?", link: "/it/intro/about" },
           { text: "Inizia subito", link: "/it/intro/getting-started" },
+          {
+            text: "Le nostre convinzioni (in inglese)",
+            link: "/en/intro/declaration-of-purpose",
+          },
           { text: "Self-hosting", link: "/it/intro/self-hosting" },
           { text: "Comunita", link: "/it/intro/community" },
         ],
