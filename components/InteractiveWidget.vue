@@ -3,7 +3,7 @@
     <div class="editor-pane">
       <div class="controls">
         <div class="control-group">
-          <label for="theme-select">{{ dict[config.lang].themeLabel }}</label>
+          <label for="theme-select">{{ dict[config.locale].themeLabel }}</label>
           <select id="theme-select" v-model="config.theme">
             <option value="minimal">Minimal</option>
             <option value="card">Card</option>
@@ -13,8 +13,10 @@
         </div>
 
         <div class="control-group">
-          <label for="lang-select">{{ dict[config.lang].languageLabel }}</label>
-          <select id="lang-select" v-model="config.lang">
+          <label for="lang-select">{{
+            dict[config.locale].languageLabel
+          }}</label>
+          <select id="lang-select" v-model="config.locale">
             <option value="en">English</option>
             <option value="de">Deutsch</option>
             <option value="fr">Français</option>
@@ -29,7 +31,7 @@
     </div>
 
     <div class="preview-pane">
-      <div class="preview-header">{{ dict[config.lang].previewHeader }}</div>
+      <div class="preview-header">{{ dict[config.locale].previewHeader }}</div>
       <div class="preview-content">
         <div id="voces-campaign-widget-preview"></div>
       </div>
@@ -41,7 +43,7 @@
 import { ref, reactive, computed, onMounted, watch, nextTick } from "vue";
 
 const props = defineProps({
-  lang: {
+  locale: {
     type: String,
     default: "en",
   },
@@ -71,14 +73,14 @@ const dict = {
 };
 
 const scriptUrl =
-  "https://cdn.jsdelivr.net/gh/voces-ch/voces-widget@cdn/0.1.4/voces-widget.js";
+  "https://cdn.jsdelivr.net/gh/voces-ch/voces-widget@cdn/1.0.0/voces-widget.js";
 
 // Reactive configuration
 const config = reactive({
   campaignUuid: "c7439b13-cabe-4daf-8f21-1f1b2980edd6",
   target: "#voces-campaign-widget-preview",
   theme: "minimal",
-  lang: props.lang,
+  locale: props.locale,
   apiBaseUrl: "https://demo.voces.ch/api/v1",
 });
 
@@ -93,7 +95,7 @@ const generatedCode = computed(() => {
         campaignUuid: '${config.campaignUuid}',
         target: '#voces-campaign-widget',
         theme: '${config.theme}',
-        lang: '${config.lang}',
+        locale: '${config.locale}',
         apiUrl: "${config.apiUrl}",
     });
   });
@@ -130,7 +132,7 @@ onMounted(() => {
 
 // Watch for changes and re-render
 watch(
-  () => [config.theme, config.lang],
+  () => [config.theme, config.locale],
   async () => {
     await nextTick();
     mountWidget();

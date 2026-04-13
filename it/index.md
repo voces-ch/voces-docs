@@ -45,4 +45,4 @@ import InteractiveWidget from '../components/InteractiveWidget.vue'
 
 Personalizza il widget qui sotto e scopri con quanta facilità si integra in qualsiasi sito web.
 
-<InteractiveWidget lang="it"/>
+<InteractiveWidget locale="it"/>
